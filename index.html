@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Plus Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="logo" width="128" onclick="window.location.href='index.html'">
+    <input type="checkbox" id="hamburger"/>
+    <label for="hamburger">☰</label>
+    <nav>
+        <a href='phones.html'>Смартфоны</a>
+        <a href='about.html'>О нас</a>
+        <a href='#' id="profile">Loading...</a>
+        <a href='index.html' id="button-logout">Выйти</a>
+        <p id="user-header"></p>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>One Plus Shop</h1>
+                <p>Магазин смартфонов</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Популярные модели</h2>
+            </div>
+        </div>
+        <section class="card-holder">
+            <div class="card">
+                <p class="bold">OnePlus 6 Pro</p>
+                <p>Снято с производства, на складе осталось 5 шт.</p>
+                <p>Успей купить! В дальнейшем завоза не будет!</p>
+                <a href="phone.html?id=0">Подробнее</a>
+            </div>
+            <div class="card">
+                <p class="bold">OnePlus 7T Pro</p>
+                <p>Самая популярная модель среди пользователей</p>
+                <p>Доставка из США</p>
+                <a href="phone.html?id=1">Подробнее</a>
+            </div>
+            <div class="card">
+                <p class="bold">OnePlus 8</p>
+                <p>Новинка 2022 года с мощным процессором</p>
+                <p>Скоро в продаже</p>
+                <a href="phone.html?id=2">Подробнее</a>
+            </div>
+        </section>
+    </div>
+
+</main>
+<footer>
+    <p>One Plus Shop (c) 2022</p>
+</footer>
+<script src="js/loadingProfile.js"></script>
+</body>
+</html>
