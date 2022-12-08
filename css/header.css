@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #11c1a2;
+    color: white;
+    font-size: 1.25rem;
+}
+
+header > span {
+    font-weight: bold;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger ~ label {
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: 100%;
+    font-size: inherit;
+    gap: 1rem;
+    transition: transform 200ms ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    transition: color 150ms linear;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    #hamburger ~ label {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        background: #22c9a5;
+        right: 0;
+        left: 40%;
+        top: 3.7rem;
+        height: 100vh;
+        padding: 1rem;
+        font-size: 2rem;
+        transform: translateX(100%);
+    }
+
+    header #hamburger:checked ~ label ~ nav {
+        transform: translateX(0);
+    }
+}
+
+header img {
+    cursor: pointer;
+}
+
+#button-logout {
+    display: none;
+}
+
+#user-header {
+    display: none;
+}

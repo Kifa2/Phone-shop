@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #11c1a2;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}

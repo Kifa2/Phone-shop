@@ -1,0 +1,6 @@
+@import "card.css";
+
+.card-holder {
+    flex-direction: row;
+    justify-content: center;
+}
